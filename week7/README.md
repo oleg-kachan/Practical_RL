@@ -33,4 +33,6 @@ _Links on all articles mentioned during the lecture could be found in "Reference
 
 We have a detailed description of the entire lab in the [homework notebook](https://github.com/yandexdataschool/Practical_RL/blob/master/week7/7.3_homework.ipynb)
 
+__important__ by default, divide KungFuMaster's rewards by 10 __when defining a2c loss__. If you don't, both actor and critic loss functions will scale up 10 times and you will have to re-adjsut learning rate and regularizer coefficients. The same will happen if you divide reward by 100500 - entropy will be the dominating loss and you will have to scale it back.
+
 Homework is platform and framewerk independent, so choose the ones which suit you best, but pay attention on how many you will need to implement youself in case of nonstandart ones.
